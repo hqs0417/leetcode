@@ -3,6 +3,12 @@ package cn.edu.pku.unicorn.leetcode.p016;
 import java.util.Arrays;
 
 public class Solution {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        int[] arr = {0, 1, 2};
+        System.out.println(solution.threeSumClosest(arr, 3));
+    }
+
     public int threeSumClosest(int[] nums, int target) {
         final int n = nums.length;
         if (n < 3) {
@@ -24,11 +30,5 @@ public class Solution {
             }
         }
         return closestVal;
-    }
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        int[] arr = {0, 1, 2};
-        System.out.println(solution.threeSumClosest(arr, 3));
     }
 } 
