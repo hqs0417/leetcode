@@ -7,17 +7,14 @@ import cn.edu.pku.unicorn.leetcode.common.TreeNode;
  */
 public class Solution {
     public boolean isSymmetric(TreeNode root) {
-        if(root == null) {
-            return true;
-        }
-        return isReverse(root.left, root.right);
+        return root == null || isReverse(root.left, root.right);
     }
 
     private boolean isReverse(TreeNode left, TreeNode right) {
-        if(left == null) {
+        if (left == null) {
             return right == left;
         }
-        if(right == null) {
+        if (right == null) {
             return left == null;
         }
         return left.val == right.val && isReverse(left.left, right.right) && isReverse(left.right, right.left);

@@ -8,9 +8,9 @@ import java.util.Arrays;
 public class Solution {
     public int[] plusOne(int[] digits) {
         int flag = 1;
-        for(int i = digits.length - 1; i >= 0; i--) {
+        for (int i = digits.length - 1; i >= 0; i--) {
             int val = digits[i] + flag;
-            if(val >= 10) {
+            if (val >= 10) {
                 digits[i] = val % 10;
                 flag = 1;
             } else {
@@ -18,7 +18,7 @@ public class Solution {
                 flag = 0;
             }
         }
-        if(flag == 0) {
+        if (flag == 0) {
             return digits;
         }
         int[] resultDigits = new int[digits.length + 1];

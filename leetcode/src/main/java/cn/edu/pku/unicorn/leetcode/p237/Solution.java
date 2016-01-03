@@ -4,11 +4,12 @@ import cn.edu.pku.unicorn.leetcode.common.ListNode;
 
 /**
  * Write a function to delete a node (except the tail) in a singly linked list, given only access to that node
- * Supposed the linked list is 1 -> 2 -> 3 -> 4 and you are given the third node of value 3, the linked list should become 1 -> 2 -> 4
+ * Supposed the linked list is 1 -> 2 -> 3 -> 4 and you are given the third node of value 3, the linked list should
+ * become 1 -> 2 -> 4
  */
 public class Solution {
     public void deleteNode(ListNode node) {
-        if(node == null) {
+        if (node == null) {
             return;
         }
         node.val = node.next.val;
