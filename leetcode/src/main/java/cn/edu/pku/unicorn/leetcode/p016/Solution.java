@@ -2,6 +2,9 @@ package cn.edu.pku.unicorn.leetcode.p016;
 
 import java.util.Arrays;
 
+/**
+ * P016.
+ */
 public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
