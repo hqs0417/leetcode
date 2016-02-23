@@ -26,7 +26,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        ListNode listNode = new ListNode();
+        ListNode listNode = new ListNode(0);
         System.out.println(listNode.val);
     }
 }
