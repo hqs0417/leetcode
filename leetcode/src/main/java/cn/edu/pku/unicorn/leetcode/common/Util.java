@@ -26,7 +26,7 @@ public final class Util {
 
     public static <E> void printList (List<E> list) {
         if (list == null) {
-            return;
+            System.out.println("null");
         }
         for (int i = 0; i < list.size(); i++) {
             System.out.print(list.get(i));

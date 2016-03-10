@@ -52,7 +52,6 @@ public class Solution {
             }
             i++;
         }
-
         // 处理完毕后，将偶数链表，挂到原链表后面
         q.next = oddHead.next;
         return head;
