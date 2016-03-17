@@ -1,6 +1,3 @@
-/*
- * Copyright (C) 2016 Baidu, Inc. All Rights Reserved.
- */
 package cn.edu.pku.unicorn.leetcode.kmp;
 
 /**
@@ -19,6 +16,12 @@ public class Solution {
         System.out.println(kmp(s, p));
     }
 
+    /**
+     * 暴力匹配 时间复杂度
+     * @param s
+     * @param p
+     * @return
+     */
     public static int violentMatch(String s, String p) {
         int i = 0, j = 0;
         while (i < s.length() && j < p.length()) {
@@ -72,7 +75,7 @@ public class Solution {
         } else return -1;
     }
 
-    // TODO 实现计算next数组
+
     public static int[] next(String p) {
         int[] next = new int[p.length()];
         next[0] = -1;
