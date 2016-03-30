@@ -50,7 +50,7 @@ public final class Util {
     /**
      * 从层次遍历字符串构造二叉树
      * 字符串的格式是 null代表叶子节点
-     * [1,2,3,#,#,4,null,null,5]
+     * [1,2,3,#,#,4,#,#,5]
      *
      * @param treeStr
      *
