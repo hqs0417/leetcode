@@ -13,7 +13,7 @@ public class Solution {
     public static void main(String[] args) {
 //        for (int i = 0; i < 100; i ++) {
 //            double a = Math.pow(3, i);
-//            Solution solution = new Solution();
+//            BSTIterator solution = new BSTIterator();
 //            System.out.println(solution.isPowerOfThree((int)a));
 //        }
 
