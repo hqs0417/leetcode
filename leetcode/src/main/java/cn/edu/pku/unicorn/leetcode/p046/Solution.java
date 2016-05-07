@@ -40,20 +40,24 @@ public class Solution {
         if (nums == null || nums.isEmpty()) {
             return result;
         }
+        // 只有一个元素
         if (nums.size() == 1) {
             List<Integer> list = new ArrayList<>();
             list.add(nums.get(0));
             result.add(list);
         }
+        // 循环序列，每次取出一个元素，作为开头的元素，剩下的元素全排列
         for (int i = 0; i < nums.size(); i++) {
-            //
+            // 剩下的元素
             List<Integer> left = new ArrayList<>();
             for (int j = 0; j < nums.size(); j++) {
                 if (j != i) {
                     left.add(nums.get(j));
                 }
             }
+            // 对剩下的元素全排列
             List<List<Integer>> subResult = helper(left);
+            // 将结果列表头部添加上面的元素
             for (List<Integer> l : subResult) {
                 l.add(0, nums.get(i));
                 result.add(l);
