@@ -5,5 +5,7 @@ package cn.edu.pku.unicorn.leetcode.p289;
  * 289. Game of Life
  */
 public class Solution {
+    public void gameOfLife(int[][] board) {
 
+    }
 }
