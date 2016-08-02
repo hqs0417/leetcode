@@ -3,6 +3,7 @@ package cn.edu.pku.unicorn.leetcode.p349;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * @author v_zhengkun
@@ -27,10 +28,22 @@ public class Solution {
         return result;
     }
 
+    /**
+     * 使用Java8 stream
+     * @param nums1
+     * @param nums2
+     * @return
+     */
+    public int[] intersection1(int[] nums1, int[] nums2) {
+        Set<Integer> set = Arrays.stream(nums2).boxed().collect(Collectors.toSet());
+        return Arrays.stream(nums1).distinct().filter(set::contains).toArray();
+    }
+
     public static void main(String[] args) {
         int[] nums1 = {1, 2, 2, 1};
         int[] nums2 = {2, 2};
         Solution solution = new Solution();
         System.out.println(Arrays.toString(solution.intersection(nums1, nums2)));
+        System.out.println(Arrays.toString(solution.intersection1(nums1, nums2)));
     }
 }
