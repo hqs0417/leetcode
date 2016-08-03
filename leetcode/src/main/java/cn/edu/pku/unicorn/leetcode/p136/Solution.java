@@ -1,6 +1,3 @@
-/*
- * Copyright (C) 2016 Baidu, Inc. All Rights Reserved.
- */
 package cn.edu.pku.unicorn.leetcode.p136;
 
 import java.util.HashMap;

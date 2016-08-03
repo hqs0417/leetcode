@@ -1,9 +1,5 @@
-/*
- * Copyright (C) 2016 Baidu, Inc. All Rights Reserved.
- */
 package cn.edu.pku.unicorn.leetcode.p345;
 
-import java.util.HashMap;
 import java.util.HashSet;
 
 /**
@@ -12,6 +8,7 @@ import java.util.HashSet;
  */
 public class Solution {
     private static HashSet<Character> vowelsSet = new HashSet<>();
+
     static {
         vowelsSet.add('a');
         vowelsSet.add('e');
@@ -24,6 +21,7 @@ public class Solution {
         vowelsSet.add('O');
         vowelsSet.add('U');
     }
+
     public String reverseVowels(String s) {
         if (s == null || s.length() < 2) {
             return s;

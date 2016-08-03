@@ -1,6 +1,3 @@
-/*
- * Copyright (C) 2016 Baidu, Inc. All Rights Reserved.
- */
 package cn.edu.pku.unicorn.leetcode.p058;
 
 import java.util.regex.Matcher;
