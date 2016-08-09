@@ -69,20 +69,25 @@ public class Solution {
         return Math.max(midMax, Math.max(leftMax, rightMax));
     }
 
-
+    /**
+     * 贪心算法
+     *
+     * @param nums
+     * @return
+     */
     public int maxSubArray1(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;
         }
-        int maxSum = nums[0];
+        int maxSum = nums[0]; //  //初始化最大和为 nums[0]
         int maxHere = nums[0];
         for (int i = 1; i < nums.length; i++) {
             if (maxHere <= 0) {
-                maxHere = nums[i];
+                maxHere = nums[i]; // 如果前面位置最大连续子序列和小于等于0，则以当前位置i结尾的最大连续子序列和为a[i]
             } else {
-                maxHere += nums[i];
+                maxHere += nums[i]; // 如果前面位置最大连续子序列和大于0，则以当前位置i结尾的最大连续子序列和为它们两者之和
             }
-            if (maxHere > maxSum) {
+            if (maxHere > maxSum) { // 更新最大连续子序列和
                 maxSum = maxHere;
             }
         }
