@@ -36,4 +36,13 @@ public class TreeUtils {
         System.out.print(root.val + " ");
         inorderTraverse(root.right);
     }
+
+    /**
+     * 根据中序和先序遍历构造二叉树
+     * @return
+     */
+    public static TreeNode buildTree(int[] inorder, int[] preorder) {
+
+        return null;
+    }
 }

@@ -29,6 +29,12 @@ public class Solution {
         return null;
     }
 
+    /**
+     * 二叉树中序遍历
+     * 递归
+     * @param root
+     * @param result
+     */
     private void inorderTraversal1Recursive(TreeNode root, List<Integer> result) {
         if (root == null) {
             return;
@@ -37,6 +43,13 @@ public class Solution {
         result.add(root.val);
         inorderTraversal1Recursive(root.right, result);
     }
+
+    /**
+     * 二叉树中序遍历
+     * 非递归
+     * @param root
+     * @return
+     */
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         LinkedList<TreeNode> stack = new LinkedList<>();
